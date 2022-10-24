@@ -14,12 +14,21 @@ class ListNode:
 
 
 a = ListNode(0)
-b = [1, 2, 3, 4]
-a = a.creat_list(b)
+c = [1, 2, 3, 4]
+d = [3, 4]
+a = a.creat_list(c)
+b = ListNode(0)
+b = b.creat_list(d)
 
-while a:
-    print(a.val)
-    if a.next:
-        print(a.next.val)
-    print("-----------")
-    a = a.next
+dict = {1: b}
+if b in dict.values():
+    print("true")
+if a in dict.values():
+    print("false")
+
+# while a:
+#     print(a.val)
+#     if a.next:
+#         print(a.next.val)
+#     print("-----------")
+#     a = a.next
